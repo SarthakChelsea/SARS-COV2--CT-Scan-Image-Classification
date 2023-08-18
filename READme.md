@@ -58,6 +58,10 @@ The model can be deployed using Flask to create a web application for users to u
 4. Processing the uploaded image and making predictions.
 5. Displaying the prediction results.
 
+![Project Banner](https://drive.google.com/file/d/1tvIedqQMsd4ZJHpEfwTWO9aFgQ8n6_Nl/view?usp=sharing) 
+
+
+
 ## Conclusion
 
 This project demonstrates the successful application of transfer learning with the VGG16 model to classify SARS-CoV-2 CT scan images. The deployment of the model using Flask allows for real-world usage and easy access to the classification service.
