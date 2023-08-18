@@ -28,9 +28,7 @@ Transfer learning is employed to leverage the knowledge learned by a pre-trained
 
 ## Model Deployment
 
-The trained model is deployed using Flask, a web framework for Python. The deployment allows users to upload a brain CT scan image through a web interface, and the model predicts the class of the uploaded image. The prediction result is then displayed on the web page.
-
-![Deployment Model](https://drive.google.com/file/d/1tvIedqQMsd4ZJHpEfwTWO9aFgQ8n6_Nl/view?usp=sharing) 
+The trained model is deployed using Flask, a web framework for Python. The deployment allows users to upload a brain CT scan image through a web interface, and the model predicts the class of the uploaded image. The prediction result is then displayed on the web page. 
 
 ## Setup
 
