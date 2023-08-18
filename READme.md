@@ -65,6 +65,7 @@ This project demonstrates the successful application of transfer learning with t
 ## References
 
 Data Source: https://www.kaggle.com/datasets/plameneduardo/sarscov2-ctscan-dataset
+
 VGG16 documentation: https://conx.readthedocs.io/en/latest/VGG16%20and%20ImageNet.html
 
 Feel free to customize this Markdown file to suit your project structure and content.
