@@ -1,55 +1,70 @@
-# SARS Cov-2 CT Scan Image Classification Project
+# SARS-CoV-2 CT Scan Image Classification Project
+![Project Banner](https://drive.google.com/file/d/1tvIedqQMsd4ZJHpEfwTWO9aFgQ8n6_Nl/view) 
 
-![Project Banner](https://www.mdpi.com/diagnostics/diagnostics-11-00893/article_deploy/html/images/diagnostics-11-00893-g002.png) 
-
-This repository contains the code and resources for the **Brain CT Scan Image Classification** project. The project focuses on using transfer learning to classify brain CT scan images into different categories and deploying the trained model using Flask.
+This repository contains code and resources for a project focused on classifying SARS-CoV-2 CT scan images using transfer learning with the VGG16 model. The project also includes the deployment of the trained model using Flask to classify whether a patient has COVID-19 or not based on CT scans. The achieved accuracy on the test set is 88%.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Dataset](#dataset)
-- [Transfer Learning](#transfer-learning)
-- [Model Deployment](#model-deployment)
-- [Setup](#setup)
-- [Contributing](#contributing)
-- [License](#license)
+- [Methodology](#methodology)
+- [Results](#results)
+- [Usage](#usage)
+- [Installation](#installation)
+- [Deployment](#deployment)
+- [Conclusion](#conclusion)
+- [References](#references)
 
 ## Introduction
 
-Medical image classification plays a crucial role in assisting healthcare professionals to accurately diagnose various medical conditions. This project aims to utilize transfer learning, a technique where a pre-trained model is fine-tuned on a new dataset, to classify brain CT scan images into different categories such as normal or Covid
+The outbreak of the SARS-CoV-2 virus has led to a global pandemic. CT scan images have proven to be useful in diagnosing COVID-19 cases. This project aims to build a classification model using transfer learning with the VGG16 architecture to automatically identify whether a patient has COVID-19 based on their CT scan images. The model is then deployed using Flask for easy and user-friendly access.
 
 ## Dataset
 
-The dataset for this project comprises a collection of brain CT scan images sourced from SARS-COV-2 Ct-Scan Dataset in kaggle. It includes labeled images belonging to 2 classes, namely as nonCovid and Covid. The dataset is preprocessed and split into training, validation, and testing sets.
+The dataset used for this project contains a collection of CT scan images from patients, some of whom have been diagnosed with COVID-19 and others who have not. The dataset was  taken by Kaggle. It has 2 folders, one with CT scans of non-covid patients and one with CT scans of covid patients.
 
-## Transfer Learning
+## Methodology
 
-Transfer learning is employed to leverage the knowledge learned by a pre-trained neural network on a large dataset to improve the performance of our model on a smaller dataset. We use the VGG16 as a base model and fine-tune its layers to adapt it to our specific classification task.
+1. **Data Preprocessing**: The CT scan images were preprocessed by resizing and normalizing them to ensure they can be fed into the VGG16 model.
 
-## Model Deployment
+2. **Transfer Learning with VGG16**: The VGG16 model pre-trained on ImageNet was used as the base model. The final classification layer was replaced with a new layer for categorical classification (COVID-19 vs. Non-COVID-19).
 
-The trained model is deployed using Flask, a web framework for Python. The deployment allows users to upload a brain CT scan image through a web interface, and the model predicts the class of the uploaded image. The prediction result is then displayed on the web page. 
+3. **Model Training**: The modified VGG16 model was trained on the dataset using appropriate training parameters. Al parameters were untrained so that it could be trained on out training set
 
-## Setup
+4. **Model Evaluation**: The trained model was evaluated on a test set to measure its performance, resulting in an accuracy of 88%.
 
-To contribute to the project or modify the code, follow these steps:
+## Results
 
-1. Fork the repository to your GitHub account.
-2. Clone the forked repository to your local machine.
-3. Create a new branch for your changes
-4. Make your modifications and additions to the code.
-5. Commit and push your changes to your GitHub repository.
-6. Create a pull request from your branch to the original repository's `main` branch.
+The final model achieved an accuracy of 88% on the test set, demonstrating its effectiveness in classifying CT scan images for COVID-19 diagnosis.
+
+## Usage
+
+To use the code in this repository:
+
+1. Clone the repository: `git clone https:/SarthakChelsea/github.com//SARS-COV2--CT-Scan-Image-Classification.git`
+2. Navigate to the project directory: `cd sars-cov-2-ct-classification`
+3. Follow the installation instructions to set up the required dependencies.
+4. Run the classification script to see how the model performs on sample CT scan images.
+5. Follow the deployment instructions to deploy the model using Flask.
 
 
+## Deployment
 
----
+The model can be deployed using Flask to create a web application for users to upload CT scan images and receive predictions. The deployment involves:
 
-**Disclaimer:** This project is for educational purposes and should not be used in real-world medical diagnoses without proper validation and professional oversight.
+1. Creating a Flask web application.
+2. Loading the trained model.
+3. Creating an HTML form for file upload.
+4. Processing the uploaded image and making predictions.
+5. Displaying the prediction results.
 
-For questions or inquiries, please contact sarthakchelsea@gmail.com.
+## Conclusion
 
-[Optional: Add acknowledgments, references, or additional sections as needed.]
+This project demonstrates the successful application of transfer learning with the VGG16 model to classify SARS-CoV-2 CT scan images. The deployment of the model using Flask allows for real-world usage and easy access to the classification service.
 
- Data Source: www.kaggle.com/plameneduardo/sarscov2-ctscan-dataset
- VGG16 documentation: https://conx.readthedocs.io/en/latest/VGG16%20and%20ImageNet.html
+## References
+
+Data Source: https://www.kaggle.com/datasets/plameneduardo/sarscov2-ctscan-dataset
+VGG16 documentation: https://conx.readthedocs.io/en/latest/VGG16%20and%20ImageNet.html
+
+Feel free to customize this Markdown file to suit your project structure and content.
