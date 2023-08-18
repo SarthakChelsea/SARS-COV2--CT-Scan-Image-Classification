@@ -1,5 +1,5 @@
 # SARS-CoV-2 CT Scan Image Classification Project
-![Project Banner](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkxVrYtiAlettZiBQMjyt2Km0PzL-tukZ6g&usqp=CAU) 
+![Project Banner](https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs10489-020-01831-z/MediaObjects/10489_2020_1831_Fig6_HTML.png) 
 
 This repository contains code and resources for a project focused on classifying SARS-CoV-2 CT scan images using transfer learning with the VGG16 model. The project also includes the deployment of the trained model using Flask to classify whether a patient has COVID-19 or not based on CT scans. The achieved accuracy on the test set is 88%.
 
