@@ -58,7 +58,7 @@ The model can be deployed using Flask to create a web application for users to u
 4. Processing the uploaded image and making predictions.
 5. Displaying the prediction results.
 
-![Project Banner](https://drive.google.com/file/d/1tvIedqQMsd4ZJHpEfwTWO9aFgQ8n6_Nl/view?usp=sharing) 
+![Image](https://drive.google.com/uc?export=view&id=1tvIedqQMsd4ZJHpEfwTWO9aFgQ8n6_Nl)
 
 
 
