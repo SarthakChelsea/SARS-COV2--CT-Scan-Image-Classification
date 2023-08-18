@@ -29,7 +29,7 @@ The dataset used for this project contains a collection of CT scan images from p
 
 2. **Transfer Learning with VGG16**: The VGG16 model pre-trained on ImageNet was used as the base model. The final classification layer was replaced with a new layer for categorical classification (COVID-19 vs. Non-COVID-19).
 
-3. **Model Training**: The modified VGG16 model was trained on the dataset using appropriate training parameters. Al parameters were untrained so that it could be trained on out training set
+3. **Model Training**: The modified VGG16 model was trained on the dataset using appropriate training parameters. Al parameters were untrained so that they could be trained on our training set
 
 4. **Model Evaluation**: The trained model was evaluated on a test set to measure its performance, resulting in an accuracy of 88%.
 
